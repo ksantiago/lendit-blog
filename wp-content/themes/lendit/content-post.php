@@ -4,6 +4,7 @@
   </header>
 
   <ul>
+    <li>Written by: <?php the_author(); ?></li>
     <li>Published: <?php the_time('F j, Y'); ?></li>
   </ul>
 
@@ -12,3 +13,4 @@
     <p><a href="<?php the_permalink(); ?>">Continue Reading &rarr;</a></p>
   </div>
 </div>
+
