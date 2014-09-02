@@ -13,24 +13,21 @@
   </head>
   <body>
 
+    <nav>
 
-<p>This is the header.</p>
+      <div>
+        <img src="https://s3-us-west-2.amazonaws.com/lendit/lenditlogo_toscale_header_nodrpshadow.png" alt="LendIt" title="LendIt">
+      </div>
 
-<nav>
+      <!-- This is the Nav Menu -->
+      <?php
 
-  <div>
-    <img src="https://s3-us-west-2.amazonaws.com/lendit/lenditlogo_toscale_header_nodrpshadow.png" alt="LendIt" title="LendIt">
-  </div>
+        $args = array(
+          'menu' => 'Main Menu'
+        );
 
-  <!-- This is the Nav Menu -->
-  <?php
+        wp_nav_menu( $args );
 
-    $args = array(
-      'menu' => 'Main Menu'
-    );
+      ?>
 
-    wp_nav_menu( $args );
-
-  ?>
-
-</nav>
+    </nav>
