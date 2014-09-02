@@ -1,6 +1,12 @@
 <div>
   <header>
-    <h3>><?php the_title(); ?></h3>
+    <h3>
+      <?php if(is_single()): ?>
+        <?php the_title(); ?>
+      <?php else: ?>
+        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+      <?php endif; ?>
+    </h3>
   </header>
 
   <ul>
