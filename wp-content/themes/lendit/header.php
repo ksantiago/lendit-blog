@@ -1,11 +1,20 @@
 <p>This is the header.</p>
 
-<?php
+<nav>
 
-  $args = array(
-    'menu' => 'Main Menu'
-  );
+  <div>
+    <img src="https://s3-us-west-2.amazonaws.com/lendit/lenditlogo_toscale_header_nodrpshadow.png" alt="LendIt" title="LendIt">
+  </div>
 
-  wp_nav_menu( $args );
+  <!-- This is the Nav Menu -->
+  <?php
 
-?>
+    $args = array(
+      'menu' => 'Main Menu'
+    );
+
+    wp_nav_menu( $args );
+
+  ?>
+
+</nav>
