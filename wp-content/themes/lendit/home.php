@@ -1,12 +1,10 @@
 <?php get_header(); ?>
 
-<p>This is the home.php file.</p>
+<p>This is the front page</p>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-  <h3><?php the_title(); ?></h3>
-  <?php the_content(); ?>
-  <hr>
+  <?php get_template_part('content-posts'); ?>
 
 <?php endwhile; else: ?>
 
