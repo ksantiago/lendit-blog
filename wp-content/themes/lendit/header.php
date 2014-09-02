@@ -1,3 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      <?php
+        wp_title( '-', true, 'right' );
+
+        bloginfo( 'name' )
+      ?>
+    </title>
+    <?php wp_head(); ?>
+  </head>
+  <body>
+
+
 <p>This is the header.</p>
 
 <nav>
