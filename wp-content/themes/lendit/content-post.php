@@ -9,10 +9,10 @@
     </h3>
   </header>
 
-  <ul>
-    <li>Written by: <?php the_author(); ?></li>
-    <li>Published: <?php the_time('F j, Y'); ?></li>
-  </ul>
+	<div class="byline">
+		<span class="author">By: <?php the_author(); ?></span>
+		<span class="timestamp">Published: <?php the_time('F j, Y'); ?></span>
+	</div>
 
   <div class="excerpt">
     <?php if(is_single()): ?>
