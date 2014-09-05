@@ -1,5 +1,11 @@
 <?php get_header(); ?>
 
+<div class="main">
+	<div class="main-blog">
+		<div class="container">
+
+<p>This is the front page</p>
+
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
   <?php get_template_part('content', 'post'); ?>
@@ -10,4 +16,10 @@
 
 <?php endif; ?>
 
+		</div>
+	</div>
+</div>
+
+
 <?php get_footer(); ?>
+
