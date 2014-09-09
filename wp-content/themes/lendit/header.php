@@ -13,6 +13,8 @@
   <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7219312/623924/css/fonts.css" />
   <?php wp_head(); ?>
   <meta name="google-site-verification" content="by6W7B4QIEZf5yc1MoQlex0GuqL2U9ekI9YTCSzX5wg" />
+
+  <link rel="icon" type="image/x-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico">
 </head>
 <body>
 
