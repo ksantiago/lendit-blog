@@ -1,13 +1,21 @@
 <?php get_header(); ?>
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<div class="main">
+	<div class="main-blog">
+		<div class="container">
 
-  <?php get_template_part('content', 'post'); ?>
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<?php endwhile; else: ?>
+      <?php get_template_part('content', 'post'); ?>
 
-  <p>There are no posts here.</p>
+    <?php endwhile; else: ?>
 
-<?php endif; ?>
+      <p>There are no posts here.</p>
+
+    <?php endif; ?>
+
+		</div>
+	</div>
+</div>
 
 <?php get_footer(); ?>

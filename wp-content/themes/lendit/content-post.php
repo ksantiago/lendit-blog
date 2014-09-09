@@ -9,27 +9,22 @@
     </h3>
   </header>
 
-  <ul>
-    <?php if(is_single()): ?>
-      <li>Written by: <?php the_author(); ?></li>
-      <li>Published: <?php the_time('F j, Y'); ?></li>
-    <?php else: ?>
-      <li>Published: <?php the_time('F j, Y'); ?></li>
-    <?php endif; ?>
-  </ul>
+  <div class="byline">
+    <span class="author">By: <?php the_author(); ?></span>
+    <span class="timestamp">Published: <?php the_time('F j, Y'); ?></span>
+  </div>
 
   <div class="excerpt">
     <?php if(is_single()): ?>
 
-      <?php the_content(); ?>
-      <?php comments_template(); ?>
+    <?php the_content(); ?>
+    <?php comments_template(); ?>
 
-    <?php else: ?>
+  <?php else: ?>
 
-      <?php the_excerpt(); ?>
-      <p><a class="post-link" href="<?php the_permalink(); ?>">Continue Reading &rarr;</a></p>
+    <?php the_excerpt(); ?>
+    <p><a class="post-link" href="<?php the_permalink(); ?>">Continue Reading &rarr;</a></p>
 
-    <?php endif; ?>
+  <?php endif; ?>
   </div>
 </div>
-
