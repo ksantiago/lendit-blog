@@ -1,4 +1,4 @@
-<div>
+<div class="item">
   <header>
     <h3>
       <?php if(is_single()): ?>
