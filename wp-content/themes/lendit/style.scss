@@ -24,6 +24,20 @@ $linkcolor: #89BE2E;
   }
 }
 
+.main-single .excerpt p {
+	font-size:18px;
+	margin-bottom:2em;
+}
+.main-single .excerpt img {
+	box-shadow:0 1px 2px rgba(0, 0, 0, 0.2) ; 
+	height:auto;
+	width:auto;
+	
+	margin-top:1.5em;
+
+}
+
+
 // ----------------------------------------------
 * {
 	outline: none;
@@ -172,16 +186,29 @@ h2 {
 	font-size: 28px;
 }
 // special for the blog
-.main-blog header h3 {
-	font-size:32px;
+.main-single header h3 {
+	font-size:48px;
+	text-rendering: optimizeLegibility;
 }
 .main-blog #respond h3 {
 	font-family: 'Verlag A', 'Verlag B', verlag;
 	font-size:16px;
 	font-weight:600;
 	text-transform:uppercase;
+	margin-bottom:2em;
 
 
+}
+#respond {
+	border-top:1px solid #ddd;
+	margin-top:3em;
+}
+#respond p {
+	margin-bottom:1em;
+small {
+	font-weight:200;
+}
+	
 }
 // end special
 a {
@@ -645,3 +672,63 @@ footer .contactus li {
 	font-weight: 500;
 }
 
+// 2014-11 12:30 pm
+
+.customize-support .navbar-fixed-top {
+	top:32px;
+}
+
+
+.byline {
+	&:after{ content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }  
+
+	opacity:.3; 
+	font-weight:500;
+	margin-bottom:12px;
+	font-weight:600;
+	span {
+		float:left;
+	}
+	span + span:before {
+		content:'\2666';
+		font-size:8px;
+		margin-left:2px;
+		margin-right:6px;
+		display:inline-block;
+		line-height:20px;
+	}
+}
+
+
+.wp-post-image {
+	box-shadow:0 1px 2px rgba(0, 0, 0, 0.2) ; 
+	max-height:200px;
+	height:auto;
+	max-width:200px;
+	width:auto;
+}
+.item {
+	max-width:680px;
+	margin:auto;
+	margin-bottom:3em;
+	
+}
+
+
+.main-front-page .byline {
+
+}
+
+.main-front-page .excerpt p {
+	font-size:18px;
+}
+
+.main-front-page .wp-post-image {
+
+}
+.main-front-page .item {
+}
+
+
+
+.post-link {display:none;}

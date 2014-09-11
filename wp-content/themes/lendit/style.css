@@ -14,7 +14,6 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
-
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -4595,6 +4594,16 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+.main-single .excerpt p {
+  font-size: 18px;
+  margin-bottom: 2em; }
+
+.main-single .excerpt img {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  height: auto;
+  width: auto;
+  margin-top: 1.5em; }
+
 * {
   outline: none; }
 
@@ -4723,14 +4732,25 @@ h2 {
   font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
   font-size: 28px; }
 
-.main-blog header h3 {
-  font-size: 32px; }
+.main-single header h3 {
+  font-size: 48px;
+  text-rendering: optimizeLegibility; }
 
 .main-blog #respond h3 {
   font-family: 'Verlag A', 'Verlag B', verlag;
   font-size: 16px;
   font-weight: 600;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 2em; }
+
+#respond {
+  border-top: 1px solid #ddd;
+  margin-top: 3em; }
+
+#respond p {
+  margin-bottom: 1em; }
+  #respond p small {
+    font-weight: 200; }
 
 a {
   color: #89be2e;
@@ -5132,3 +5152,46 @@ footer .contactus li {
   padding-top: 20px;
   padding-left: 20px;
   font-weight: 500; }
+
+.customize-support .navbar-fixed-top {
+  top: 32px; }
+
+.byline {
+  opacity: 0.3;
+  font-weight: 500;
+  margin-bottom: 12px;
+  font-weight: 600; }
+  .byline:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0; }
+  .byline span {
+    float: left; }
+  .byline span + span:before {
+    content: '\2666';
+    font-size: 8px;
+    margin-left: 2px;
+    margin-right: 6px;
+    display: inline-block;
+    line-height: 20px; }
+
+.wp-post-image {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  max-height: 200px;
+  height: auto;
+  max-width: 200px;
+  width: auto; }
+
+.item {
+  max-width: 680px;
+  margin: auto;
+  margin-bottom: 3em; }
+
+.main-front-page .excerpt p {
+  font-size: 18px; }
+
+.post-link {
+  display: none; }
