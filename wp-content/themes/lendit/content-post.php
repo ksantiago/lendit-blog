@@ -9,7 +9,7 @@
           // check if the post has a Post Thumbnail assigned to it.
             the_post_thumbnail();
           } ?>
-          <span><?php the_title(); ?></span>
+          <div><?php the_title(); ?></div>
         </a>
       <?php endif; ?>
     </h3>

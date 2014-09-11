@@ -29,10 +29,10 @@ $linkcolor: #89BE2E;
 	margin-bottom:2em;
 }
 .main-single .excerpt img {
-	box-shadow:0 1px 2px rgba(0, 0, 0, 0.2) ; 
+	box-shadow:0 1px 2px rgba(0, 0, 0, 0.2) ;
 	height:auto;
-	width:auto;
-	
+	max-width:auto;
+
 	margin-top:1.5em;
 
 }
@@ -132,7 +132,7 @@ input[type="submit"]:hover {
 }
 
 
-// ============================================================  
+// ============================================================
 // @general
 body {
 	padding: 126px 0 0 0;
@@ -146,9 +146,9 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
-	
+
 @include clearfix;
-	
+
 	@media (max-width: 767px) {
 		padding: 50px 0 0 0;
 	}
@@ -208,7 +208,7 @@ h2 {
 small {
 	font-weight:200;
 }
-	
+
 }
 // end special
 a {
@@ -250,7 +250,7 @@ hr {
 
 
 
-// ============================================================  
+// ============================================================
 // @nav
 .navbar {
 	min-height: 0;
@@ -316,7 +316,7 @@ nav .container ul {
 	font-size: 16px;
 	list-style-type: none;
 @include clearfix;
-	
+
 	@media (max-width: 767px) {
 		float: none;
 		display: table;
@@ -388,20 +388,20 @@ nav .container ul li a:hover {
 }
 .main-blog h3 {
 		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
-	
+
 }
 
 .main-blog h3#comments {
 	font-size:18px;
 	font-family: 'Verlag A', 'Verlag B', verlag;
-	
-	
+
+
 }
 
 
 
 
-// ============================================================  
+// ============================================================
 // @footer
 footer {
 	margin: 0;
@@ -567,7 +567,7 @@ footer .column1 h2 {
 	background: #89be2e;
 	color: #fff;
 }
-// 
+//
 // •div.column2
 footer .column2 {
 	float: right;
@@ -577,7 +577,7 @@ footer .column2 {
 		width: auto;
 	}
 }
-// •h2 
+// •h2
 footer .column2 h2 {
 	font-size: 20px;
 	font-family: 'Verlag A', 'Verlag B', verlag;
@@ -680,9 +680,9 @@ footer .contactus li {
 
 
 .byline {
-	&:after{ content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }  
+	&:after{ content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
 
-	opacity:.3; 
+	opacity:.3;
 	font-weight:500;
 	margin-bottom:12px;
 	font-weight:600;
@@ -701,7 +701,7 @@ footer .contactus li {
 
 
 .wp-post-image {
-	box-shadow:0 1px 2px rgba(0, 0, 0, 0.2) ; 
+	box-shadow:0 1px 2px rgba(0, 0, 0, 0.2) ;
 	max-height:200px;
 	height:auto;
 	max-width:200px;
@@ -711,7 +711,7 @@ footer .contactus li {
 	max-width:680px;
 	margin:auto;
 	margin-bottom:3em;
-	
+
 }
 
 
