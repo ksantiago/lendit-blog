@@ -4602,7 +4602,7 @@ button.close {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   height: auto;
   max-width: auto;
-  margin-top: 1.5em; }
+  margin-top: 12px; }
 
 * {
   outline: none; }
@@ -4747,6 +4747,12 @@ h2 {
   border-top: 1px solid #ddd;
   margin-top: 3em; }
 
+@media (max-width: 960px) {
+  #respond textarea#comment {
+    width: 100%; } }
+@media (max-width: 767px) { }
+@media (max-width: 550px) { }
+
 #respond p {
   margin-bottom: 1em; }
   #respond p small {
@@ -4868,8 +4874,6 @@ nav .container ul li {
   @media (max-width: 767px) {
     nav .container ul li {
       float: none;
-      display: table-cell;
-      width: 33%;
       padding: 4px;
       box-sizing: border-box;
       -moz-box-sizing: border-box;
@@ -4878,7 +4882,7 @@ nav .container ul li {
 nav .container ul li a {
   text-transform: uppercase;
   display: block;
-  padding: 10px 20px;
+  padding: 10px 12px;
   margin-left: 5px;
   margin-right: 5px;
   -webkit-border-radius: 2px;
@@ -4887,13 +4891,15 @@ nav .container ul li a {
   border-radius: 2px; }
   @media (max-width: 960px) {
     nav .container ul li a {
-      padding: 10px; } }
+      padding: 10px;
+      font-size: 14px; } }
   @media (max-width: 767px) {
     nav .container ul li a {
       width: 100%;
       padding: 4px 0;
       text-align: center;
-      margin: 2px; } }
+      margin: 2px;
+      font-size: 18px; } }
 
 nav .container ul li a:hover {
   background: #f0f0f0;
@@ -5159,8 +5165,8 @@ footer .contactus li {
 .byline {
   opacity: 0.3;
   font-weight: 500;
-  margin-bottom: 12px;
-  font-weight: 600; }
+  font-weight: 600;
+  margin-bottom: 9px; }
   .byline:after {
     content: ".";
     display: block;
@@ -5169,21 +5175,17 @@ footer .contactus li {
     line-height: 0;
     height: 0; }
   .byline span {
-    float: left; }
-  .byline span + span:before {
-    content: '\2666';
-    font-size: 8px;
-    margin-left: 2px;
-    margin-right: 6px;
-    display: inline-block;
-    line-height: 20px; }
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 3px; }
 
 .wp-post-image {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  max-height: 250px;
+  max-height: 200px;
   height: auto;
-  max-width: 400px;
-  width: auto; }
+  max-width: 200px;
+  width: auto;
+  margin-bottom: 15px; }
 
 .item {
   max-width: 680px;
@@ -5195,3 +5197,6 @@ footer .contactus li {
 
 .post-link {
   display: none; }
+
+.main-front-page .item h3 a {
+  display: inline-block; }

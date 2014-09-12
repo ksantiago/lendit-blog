@@ -33,7 +33,7 @@ $linkcolor: #89BE2E;
 	height:auto;
 	max-width:auto;
 
-	margin-top:1.5em;
+	margin-top:12px;
 
 }
 
@@ -203,6 +203,17 @@ h2 {
 	border-top:1px solid #ddd;
 	margin-top:3em;
 }
+#respond textarea#comment {
+
+	@media (max-width: 960px) {
+		width:100%;
+}
+	@media (max-width: 767px) {
+}
+	@media (max-width: 550px) {
+}
+
+}
 #respond p {
 	margin-bottom:1em;
 small {
@@ -336,8 +347,6 @@ nav .container ul li {
 	float: left;
 	@media (max-width: 767px) {
 		float: none;
-		display: table-cell;
-		width: 33%;
 		padding: 4px;
 		box-sizing: border-box;
 		-moz-box-sizing: border-box;
@@ -347,7 +356,7 @@ nav .container ul li {
 nav .container ul li a {
 	text-transform: uppercase;
 	display: block;
-	padding: 10px 20px;
+	padding: 10px 12px;
 	margin-left: 5px;
 	margin-right: 5px;
 	-webkit-border-radius: 2px;
@@ -356,12 +365,15 @@ nav .container ul li a {
 	border-radius: 2px;
 	@media (max-width: 960px) {
 		padding: 10px;
+		font-size:14px;
+
 	}
 	@media (max-width: 767px) {
 		width: 100%;
 		padding: 4px 0;
 		text-align: center;
 		margin: 2px;
+		font-size:18px;
 	}
 }
 nav .container ul li a:hover {
@@ -684,19 +696,14 @@ footer .contactus li {
 
 	opacity:.3;
 	font-weight:500;
-	margin-bottom:12px;
 	font-weight:600;
+	margin-bottom:9px;
 	span {
 		float:left;
+		margin-right:10px;
+		margin-bottom:3px;
 	}
-	span + span:before {
-		content:'\2666';
-		font-size:8px;
-		margin-left:2px;
-		margin-right:6px;
-		display:inline-block;
-		line-height:20px;
-	}
+
 }
 
 
@@ -706,11 +713,14 @@ footer .contactus li {
 	height:auto;
 	max-width:200px;
 	width:auto;
+	margin-bottom:15px;
 }
 .item {
 	max-width:680px;
 	margin:auto;
 	margin-bottom:3em;
+
+
 
 }
 
@@ -732,3 +742,10 @@ footer .contactus li {
 
 
 .post-link {display:none;}
+
+
+.main-front-page .item h3 a  {
+	display:inline-block;
+}
+
+

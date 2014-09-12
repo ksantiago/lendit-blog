@@ -2,6 +2,8 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
 
   <title>
     <?php
@@ -35,6 +37,12 @@
   <!-- End of Google Analytics Code -->
 
   <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
     <div class="container">
      <div id="navbarCollapse" class="collapse navbar-collapse">
 
