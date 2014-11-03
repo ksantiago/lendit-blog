@@ -13,11 +13,20 @@ function theme_js() {
   wp_enqueue_script( 'theme', get_template_directory_uri() . '/js/theme.js', array('jquery'), '', true );
 }
 
+// Register Custom Navigation Walker
+require_once('wp_bootstrap_navwalker.php');
+
+
 add_action( 'wp_enqueue_scripts', 'theme_js' );
 add_action( 'wp_enqueue_scripts', 'theme_styles' );
 
 // Enable custom menus
 add_theme_support( 'menus' );
+
+register_nav_menus( array(
+    'primary' => __( 'Main Menu' ),
+) );
+
 // Enable thumbnails
 add_theme_support('post-thumbnails');
 
