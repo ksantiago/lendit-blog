@@ -13,9 +13,11 @@ Text Domain: lendit
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-@import "css/bootstrap";
+@import "css/bootstrap/bootstrap";
+@import "css/variables";
+@import "css/nav";
+/* begof */
 
-$linkcolor: #89BE2E;
 @mixin clearfix {
   &:after {
     content: "";
@@ -135,7 +137,7 @@ input[type="submit"]:hover {
 // ============================================================
 // @general
 body {
-	padding: 126px 0 0 0;
+	padding: 0 0 0 0;
 	font-family: 'Verlag A', 'Verlag B', verlag;
 	background: #f0f0f0;
 	font-weight: 200;
@@ -150,10 +152,10 @@ body {
 @include clearfix;
 
 	@media (max-width: 767px) {
-		padding: 50px 0 0 0;
+		padding: 0 0 0 0;
 	}
 	@media (max-width: 550px) {
-		padding: 50px 0 0 0;
+		padding: 0 0 0 0;
 		padding-bottom: 0;
 	}
 }
@@ -261,125 +263,6 @@ hr {
 
 
 
-// ============================================================
-// @nav
-.navbar {
-	min-height: 0;
-	margin-bottom: 0;
-}
-.navbar-default {
-	background: #fff;
-	border-bottom-color:#ccc;
-}
-nav {
-	background: #fff;
-}
-nav .container {
-	padding-bottom: 20px;
-	border-left: 1px solid #ccc;
-	border-right: 1px solid #ccc;
-	width: 100%;
-	display: table;
-	float: none;
-	max-width: 1207px;
-	margin: auto;
-	@media (max-width: 960px) {
-		border-left: none;
-		border-right: none;
-		padding: 0 0 20px 0;
-	}
-	@media (max-width: 767px) {
-		padding-bottom: 0;
-		border: none;
-	}
-}
-// nav logo
-nav .container .nav-logo {
-	margin-left: 20px;
-	float: left;
-	@media (max-width: 767px) {
-		display: none;
-	}
-}
-nav .container .nav-logo a {
-	display: block;
-	margin-top: 15px;
-	width: 100px;
-	height: 90px;
-	background: url(img/lendit_new_logo_grey.png) center center no-repeat;
-	background-size: 110px;
-}
-nav .container .nav-logo a img {
-	display: none;
-	max-height: 70px;
-}
-// nav links
-nav .container .nav-col {
-	display: inline;
-}
-nav .container ul {
-	padding-left: 0;
-	margin-right: 10px;
-	margin-top: 40px;
-	float: right;
-	font-family: 'Verlag A', 'Verlag B', verlag;
-	font-weight: 500;
-	font-size: 16px;
-	list-style-type: none;
-@include clearfix;
-
-	@media (max-width: 767px) {
-		float: none;
-		display: table;
-		width: 100%;
-		padding: 0;
-		margin: 4px auto 0 auto;
-	}
-}
-nav .container ul > div {
-	display: inline;
-	@media (max-width: 767px) {
-		display: table-row;
-		float: none;
-	}
-}
-nav .container ul li {
-	float: left;
-	@media (max-width: 767px) {
-		float: none;
-		padding: 4px;
-		box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		text-align: center;
-	}
-}
-nav .container ul li a {
-	text-transform: uppercase;
-	display: block;
-	padding: 10px 12px;
-	margin-left: 5px;
-	margin-right: 5px;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	-ms-border-radius: 2px;
-	border-radius: 2px;
-	@media (max-width: 960px) {
-		padding: 10px;
-		font-size:14px;
-
-	}
-	@media (max-width: 767px) {
-		width: 100%;
-		padding: 4px 0;
-		text-align: center;
-		margin: 2px;
-		font-size:18px;
-	}
-}
-nav .container ul li a:hover {
-	background: #f0f0f0;
-	text-decoration: none;
-}
 
 
 
@@ -747,5 +630,8 @@ footer .contactus li {
 .main-front-page .item h3 a  {
 	display:inline-block;
 }
+
+
+
 
 

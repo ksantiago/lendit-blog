@@ -4594,6 +4594,121 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+.navbar-area {
+  background: #fff;
+  border-bottom: 1px solid #ccc; }
+
+.navbar-default {
+  background: #fff;
+  border-bottom: none;
+  margin-bottom: 0;
+  border-top: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0; }
+  @media only screen and (min-width: 768px) {
+    .navbar-default {
+      max-width: 1207px;
+      margin: auto;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc; } }
+  @media only screen and (max-width: 768px) {
+    .navbar-default {
+      border: none; } }
+
+.nav-logo {
+  float: left;
+  width: 100px;
+  height: 80px;
+  background: #fff url(img/lendit_new_logo_grey.png) 0 center no-repeat;
+  background-size: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px; }
+  @media only screen and (max-width: 768px) {
+    .nav-logo {
+      display: none; } }
+
+@media (min-width: 768px) {
+  .navbar-header {
+    float: right; } }
+
+.navbar-default .navbar-toggle {
+  border: none;
+  border-radius: 0; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #89BE2E; }
+
+.navbar-default .navbar-toggle:focus {
+  background-color: #eee; }
+
+.navbar-default .navbar-toggle:focus .icon-bar {
+  background-color: #89BE2E; }
+
+.navbar-default .navbar-toggle:hover {
+  background-color: #89BE2E; }
+
+.navbar-default .navbar-toggle:hover .icon-bar {
+  background-color: #fff; }
+
+@media only screen and (min-width: 768px) {
+  .navbar-collapse {
+    margin-top: 25px;
+    padding-left: 0;
+    padding-right: 0; } }
+@media only screen and (max-width: 768px) {
+  .navbar-collapse {
+    border-top: none; } }
+
+.navbar-default .navbar-nav > li > a {
+  color: #89BE2E; }
+  @media only screen and (min-width: 768px) {
+    .navbar-default .navbar-nav > li > a {
+      margin-right: 0;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px; } }
+  @media only screen and (min-width: 768px) {
+    .navbar-default .navbar-nav > li > a {
+      font-size: 20px;
+      font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
+      margin-right: 1px; } }
+  @media only screen and (min-width: 910px) {
+    .navbar-default .navbar-nav > li > a {
+      font-family: 'Verlag A', 'Verlag B', 'verlag';
+      font-size: 20px;
+      margin-right: 10px; } }
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  background: #89BE2E;
+  color: #fff; }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #aaa;
+  background: #f7f7f7; }
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background: #89BE2E;
+  color: #fff;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0; }
+
+@media only screen and (max-width: 768px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #89BE2E;
+    background: #f0f0f0; } }
+
+@media only screen and (max-width: 768px) {
+  .navbar-nav .open .dropdown-menu {
+    background: #fafafa;
+    box-shadow: 0 0 2px #ccc; } }
+
+/* begof */
 .main-single .excerpt p {
   font-size: 18px;
   margin-bottom: 2em; }
@@ -4685,7 +4800,7 @@ button {
   color: #fff; }
 
 body {
-  padding: 126px 0 0 0;
+  padding: 0 0 0 0;
   font-family: 'Verlag A', 'Verlag B', verlag;
   background: #f0f0f0;
   font-weight: 200;
@@ -4702,10 +4817,10 @@ body {
     clear: both; }
   @media (max-width: 767px) {
     body {
-      padding: 50px 0 0 0; } }
+      padding: 0 0 0 0; } }
   @media (max-width: 550px) {
     body {
-      padding: 50px 0 0 0;
+      padding: 0 0 0 0;
       padding-bottom: 0; } }
 
 p, li {
@@ -4788,122 +4903,6 @@ a:hover {
 
 hr {
   border-top: 1px solid #ccc; }
-
-.navbar {
-  min-height: 0;
-  margin-bottom: 0; }
-
-.navbar-default {
-  background: #fff;
-  border-bottom-color: #ccc; }
-
-nav {
-  background: #fff; }
-
-nav .container {
-  padding-bottom: 20px;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  width: 100%;
-  display: table;
-  float: none;
-  max-width: 1207px;
-  margin: auto; }
-  @media (max-width: 960px) {
-    nav .container {
-      border-left: none;
-      border-right: none;
-      padding: 0 0 20px 0; } }
-  @media (max-width: 767px) {
-    nav .container {
-      padding-bottom: 0;
-      border: none; } }
-
-nav .container .nav-logo {
-  margin-left: 20px;
-  float: left; }
-  @media (max-width: 767px) {
-    nav .container .nav-logo {
-      display: none; } }
-
-nav .container .nav-logo a {
-  display: block;
-  margin-top: 15px;
-  width: 100px;
-  height: 90px;
-  background: url(img/lendit_new_logo_grey.png) center center no-repeat;
-  background-size: 110px; }
-
-nav .container .nav-logo a img {
-  display: none;
-  max-height: 70px; }
-
-nav .container .nav-col {
-  display: inline; }
-
-nav .container ul {
-  padding-left: 0;
-  margin-right: 10px;
-  margin-top: 40px;
-  float: right;
-  font-family: 'Verlag A', 'Verlag B', verlag;
-  font-weight: 500;
-  font-size: 16px;
-  list-style-type: none; }
-  nav .container ul:after {
-    content: "";
-    display: table;
-    clear: both; }
-  @media (max-width: 767px) {
-    nav .container ul {
-      float: none;
-      display: table;
-      width: 100%;
-      padding: 0;
-      margin: 4px auto 0 auto; } }
-
-nav .container ul > div {
-  display: inline; }
-  @media (max-width: 767px) {
-    nav .container ul > div {
-      display: table-row;
-      float: none; } }
-
-nav .container ul li {
-  float: left; }
-  @media (max-width: 767px) {
-    nav .container ul li {
-      float: none;
-      padding: 4px;
-      box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      text-align: center; } }
-
-nav .container ul li a {
-  text-transform: uppercase;
-  display: block;
-  padding: 10px 12px;
-  margin-left: 5px;
-  margin-right: 5px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  border-radius: 2px; }
-  @media (max-width: 960px) {
-    nav .container ul li a {
-      padding: 10px;
-      font-size: 14px; } }
-  @media (max-width: 767px) {
-    nav .container ul li a {
-      width: 100%;
-      padding: 4px 0;
-      text-align: center;
-      margin: 2px;
-      font-size: 18px; } }
-
-nav .container ul li a:hover {
-  background: #f0f0f0;
-  text-decoration: none; }
 
 .main-blog {
   padding-top: 40px;
@@ -5181,9 +5180,9 @@ footer .contactus li {
 
 .wp-post-image {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  max-height: 250px;
+  max-height: 200px;
   height: auto;
-  max-width: 400px;
+  max-width: 200px;
   width: auto;
   margin-bottom: 15px; }
 
