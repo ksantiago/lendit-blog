@@ -4849,7 +4849,7 @@ button.close {
   float: left;
   width: 100px;
   height: 80px;
-  background: #fff url(lendit_new_logo_grey.png) 0 center no-repeat;
+  background: #fff url(img/lendit_new_logo_grey.png) 0 center no-repeat;
   background-size: 100px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -4891,6 +4891,9 @@ button.close {
     border-top: none; } }
 
 .navbar-default .navbar-nav > li > a {
+  -webkit-font-smoothing: auto;
+  letter-spacing: 0.3pt;
+  font-weight: 500;
   color: #89BE2E; }
   @media only screen and (min-width: 768px) {
     .navbar-default .navbar-nav > li > a {
