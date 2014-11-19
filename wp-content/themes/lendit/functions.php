@@ -30,4 +30,9 @@ register_nav_menus( array(
 // Enable thumbnails
 add_theme_support('post-thumbnails');
 
+// Disable admin toolbar if you're not the admin user
+if (!current_user_can(‘edit_posts’)) {
+  show_admin_bar(false);
+}
+
 ?>

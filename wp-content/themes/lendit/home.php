@@ -10,7 +10,7 @@
 
     <?php endwhile; else: ?>
 
-      <p>There are no posts here.</p>
+      <p>There are no posts here. </p>
 
     <?php endif; ?>
 

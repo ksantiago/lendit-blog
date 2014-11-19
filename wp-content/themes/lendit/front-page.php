@@ -4,19 +4,31 @@
 	<div class="main-blog">
 		<div class="container">
 
-    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+      <?php if ( have_posts() ) : ?>
 
+      <?php while ( have_posts() ) : the_post(); ?>
 
-      <?php get_template_part('content', 'post'); ?>
+        <?php get_template_part('content', 'post'); ?>
 
-    <?php endwhile; else: ?>
+      <?php endwhile; ?>
 
-      <p>There are no posts here.</p>
+        <?php next_posts_link('Older Posts'); ?>
+        <?php previous_posts_link('Newer Posts'); ?>
 
-    <?php endif; ?>
+        <?php
+        wp_reset_postdata();
+        ?>
 
-		</div>
-	</div>
+      <?php else: ?>
+
+        <p>There are no posts here.</p>
+
+      <?php endif; ?>
+    </div>
+
+test910
+
+  </div>
 </div>
 
 
