@@ -1,3 +1,4 @@
+// begin nav =====================================
 
 
 // begin navbar-area 
@@ -51,6 +52,7 @@
 	float:left;
 	width:100px;
 	height:80px;
+	
 	background:#fff url(img/lendit_new_logo_grey.png) 0 center no-repeat;
 	background-size:100px;
 	margin-top:10px;
@@ -130,7 +132,12 @@
 
 
 // begin navbar-nav li a
+
 .navbar-default .navbar-nav > li > a {
+	-webkit-font-smoothing:auto;
+	letter-spacing:.3pt;
+	
+	font-weight:500;
 	color:#89BE2E;
 	@media only screen and ( min-width: $screen-sm-min ) {
 		margin-right:0;
@@ -141,9 +148,11 @@
 	@media only screen and ( min-width: $screen-sm-min ) {
 		font-size:20px;
 		font-family: 'Verlag Cond A', 'Verlag Cond B', 'verlag condensed';
-		margin-right:1px;
+		margin-right:0;
+		padding-left:9px;
+		padding-right:9px;
 	}
-	@media only screen and ( min-width: 910px ) {
+	@media only screen and ( min-width: 980px ) {
 		font-family: 'Verlag A', 'Verlag B', 'verlag';
 		font-size:20px;
 		margin-right:10px;
@@ -195,4 +204,13 @@
 }
 // end dropdown-menu
 
+
+// end nav ================================
+
+
+.conferences {
+	.nav-logo {
+		background:none;
+	}
+}
 
